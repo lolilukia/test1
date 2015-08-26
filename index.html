@@ -60,40 +60,40 @@
     $(document).on("pageinit","#mypage",function(){  
         /* 如果对div1的非空白部分向左滑，那么div1就隐藏，div2就显示，同时页面计数器+1，并更新divnumber这个行内文本 */  
         $("#div1").on("swipeleft",function(){  
-             $("#div1").hide("fast");  
-             $("#div2").show("fast");  
+             $("#div1").hide("false");  
+             $("#div2").show("false");  
              divnum=divnum+1;  
              $("#divnumber").text(divnum)  
         });  
         /* 如果对div2的非空白部分向右滑，那么div1就显示，div2就隐藏，同时页面计数器-1，并更新divnumber这个行内文本 */  
          $("#div2").on("swiperight",function(){  
-             $("#div1").show("fast");  
-             $("#div2").hide("fast");  
+             $("#div1").show("false");  
+             $("#div2").hide("false");  
              divnum=divnum-1;  
              $("#divnumber").text(divnum)  
         });  
         /* 如果对div2的非空白部分向左滑，那么div2就隐藏，div3就显示，同时页面计数器+1，并更新divnumber这个行内文本，下面如此类推 */  
         $("#div2").on("swipeleft",function(){  
-             $("#div2").hide("fast");  
-             $("#div3").show("fast");  
+             $("#div2").hide("false");  
+             $("#div3").show("false");  
              divnum=divnum+1;  
              $("#divnumber").text(divnum)  
         });  
         $("#div3").on("swiperight",function(){  
-             $("#div2").show("fast");  
-             $("#div3").hide("fast");  
+             $("#div2").show("false");  
+             $("#div3").hide("false");  
              divnum=divnum-1;  
              $("#divnumber").text(divnum)  
         });  
         $("#div3").on("swipeleft",function(){  
-             $("#div3").hide("fast");  
-             $("#div4").show("fast");  
+             $("#div3").hide("false");  
+             $("#div4").show("false");  
              divnum=divnum+1;  
              $("#divnumber").text(divnum)  
         });  
          $("#div4").on("swiperight",function(){  
-             $("#div3").show("fast");  
-             $("#div4").hide("fast");  
+             $("#div3").show("false");  
+             $("#div4").hide("false");  
              divnum=divnum-1;  
              $("#divnumber").text(divnum)  
         });                            
